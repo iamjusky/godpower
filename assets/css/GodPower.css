@@ -1,0 +1,66 @@
+#menu_panel {
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: absolute;
+}
+#main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main h1 {
+  margin-bottom: 10px;
+}
+#main nav {
+  margin-bottom: 20px;
+}
+#main nav select {
+  padding: 5px 8px;
+  border-radius: 30px;
+}
+/* slap */
+#main .action_slap #frame {
+  display: inherit;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#main .action_slap #frame #flipbook {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+/* tablet */
+@media only screen and (max-width: 768px) {
+  #main .action_slap #frame img {
+    height: 300px;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 425px) {
+  #main .action_slap #frame img {
+    height: 150px;
+  }
+}
+#main .action {
+  display: none;
+}
+#main .action_display {
+  display: block;
+}
+/* light */
+#main .action_light {
+  cursor: url("../img/light/lightbulb_off.png"), auto;
+}
+
+#main .action_light img {
+  display: none;
+  width: 400px;
+  height: 400px;
+}
+#main .action_light .light_display {
+  display: block;
+}

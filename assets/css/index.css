@@ -1,0 +1,12 @@
+:root {
+  --main-color: rgb(0 0 0 / 49%);
+  --main-background-color: bisque;
+}
+
+body {
+  margin: unset;
+  font-family: cursive;
+  background-color: bisque;
+  width: 100%;
+  overflow: hidden;
+}

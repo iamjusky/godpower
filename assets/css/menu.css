@@ -1,0 +1,97 @@
+#menu_panel {
+  background-color: var(--main-background-color);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1;
+}
+#menu_panel h1 {
+  margin-bottom: 20px;
+}
+#menu_panel nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu_panel nav a {
+  position: relative;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--main-color);
+  padding: 8px;
+  margin-bottom: 30px;
+  font-size: 13.6px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  width: 150px;
+  text-align: center;
+}
+
+#menu_panel nav > a:hover {
+  transform: scale(1.1);
+  color: black;
+}
+#menu_panel nav .content {
+  padding: 5px;
+}
+#menu_panel nav .light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: -2px -2px 5px rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+#menu_panel nav .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 2px 5px rgb(206, 206, 206) !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+#menu_btn {
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  left: -3px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(206, 206, 206);
+  border-radius: 0 50px 50px 0;
+  display: flex;
+  align-items: center;
+}
+#menu_btn:hover {
+  left: 1px;
+}
+#menu_btn svg {
+  fill: var(--main-color);
+  padding: 15px;
+  width: 40px;
+}
+#menu_btn svg:hover {
+  fill: black;
+}
+#menu_btn #close_menu_icon {
+  display: none;
+}
+#current_page {
+  transform: scale(1.1);
+  color: black !important;
+}
+/* mobile */
+@media only screen and (max-width: 425px) {
+  #menu_btn {
+    top: unset;
+    bottom: 0;
+    border-radius: 0 50px 0 0;
+    padding: 10px;
+  }
+}
